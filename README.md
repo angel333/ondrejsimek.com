@@ -11,7 +11,7 @@ Generated site will be in `./pub`.
 
 ## Credits
 
-- [metalsmith](//metalsmith.io) and friends...
+- [metalsmith](//github.com/segmentio/metalsmith) and friends...
 
 ## License
 
