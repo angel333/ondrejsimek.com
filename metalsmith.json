@@ -1,0 +1,34 @@
+{
+  "source": "./src",
+  "destination": "./pub",
+  "clean": true,
+  "plugins": {
+    "metalsmith-markdown": {},
+    "metalsmith-pandoc": {
+      "from": "rst",
+      "pattern": "**/*.rst"
+    },
+    "metalsmith-date-formatter": {
+      "dates": [
+        {
+          "key": "published",
+          "format": "YYYY-MM-DD"
+        }
+      ]
+    },
+    "metalsmith-collections": {
+      "articles": {
+        "pattern": "articles/**/*.html",
+        "sortBy": "published",
+        "reverse": true
+      }
+    },
+    "metalsmith-in-place": {
+      "pattern": "**/*.njk"
+    },
+    "metalsmith-layouts": {
+      "default": "default.njk",
+      "pattern": "**/*.html"
+    }
+  }
+}

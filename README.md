@@ -4,7 +4,7 @@
 
 ```
 npm install
-node gen
+npm run gen
 ```
 
 Generated site will be in `./pub`.
