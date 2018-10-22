@@ -1,0 +1,62 @@
+---
+title: Ondrej Simek
+homepage: 1
+---
+
+<h1>Ondrej Simek</h1>
+
+<hr>
+
+<h2>Articles</h2>
+
+<ul>
+	{% for article in collections.articles %}
+		{% if not article.draft %}
+			<li><a href='{{ article.path | replace(r/\/index\.html$/, '/') }}'>{{ article.title }}</a> <i>({{ article.published }})</i></li>
+		{% endif %}
+	{% endfor %}
+</ul>
+
+<hr>
+
+<h2>For desktop</h2>
+
+<ul>
+<li><strong><a href='https://github.com/angel333/infinimouse'>InfiniMouse</a></strong>(AutoIt script) &ndash; Move mouse to one border, it'll come from the other.</li>
+<li><strong><a href='https://github.com/angel333/chrome-nyxium'>Nyxium</a></strong>(Chrome extension) <i>(retired)</i> &ndash; a <a href='https://www.nyx.cz/' target='_blank'><i>Nyx.cz</i></a> notifier for Google Chrome (<a target='_blank' href='/screens/nyxium.png'>screenshot</a>).</li>
+<li><strong>TubePost</strong> (Windows) &ndash; I wrote a tiny GUI frontend for <i>NET SEND</i> / <i>MSG</i> in C# back in 2010 &ndash; basically just to familiarize myself with .NET. Download <a href='/download/tubepost.exe'>MSG version</a> or <a href='/download/tubepost-netsend.exe'>NET SEND version</a> (for Windows &le; XP).</li>
+</ul>
+
+<hr>
+
+<h2>jQuery plugins</h2>
+
+<ul>
+<li><strong><a href='http://angel333.github.io/jquery-blended/'>jquery-blended</a></strong> &ndash; a carousel with images blended together (mask effect).</li>
+</ul>
+
+<h2>CakePHP plugins</h2>
+
+<ul>
+<li><strong><a href='http://github.com/angel333/listing'>Listing</a></strong> &ndash; allows you to make your listings (of anything) very easily &ndash; you can create more than one listing on a single page, you can let the user filter the results, supports pagination, etc.</li>
+<li><strong><a href='http://github.com/angel333/sublayouts'>SubLayouts</a></strong> &ndash; allows you to use nested layouts &#8211; can be very handy!</li>
+</ul>
+
+<i>Please note that I no longer use CakePHP. These plugins might or might not work in versions newer than, say, 2 or something.</i>
+
+<hr>
+
+<h2>Other stuff</h2>
+
+<ul>
+<li><strong><a href='/radio-notes'>Radio Notes</a></strong> &ndash; random notes about two-way radios.</li>
+</ul>
+
+<hr>
+
+<figure>
+<object data='/elephant.svg' type='image/svg+xml'>
+	<img src='/elephant.svg' width='300'>
+</object>
+<figlabel>An elephant doodle for no reason...</figlabel>
+</figure>

@@ -1,0 +1,36 @@
+body {
+	max-width: 60rem;
+	margin: 0 auto;
+	padding: 1rem;
+}
+
+h1 { text-align: center; }
+p { text-align: justify; }
+p, li { line-height: 1.6rem; }
+hr { border: 0; border-bottom: 1px solid #ccc; }
+pre { max-width: 100%; overflow: auto; }
+pre { background: #eee; padding: .6rem;}
+
+/* link at the top (home) */
+nav>a { text-decoration: none; }
+
+/* figures */
+figure {
+	margin-left: 0;
+	margin-right: 0;
+	text-align: center;
+}
+figure img { max-width: 100%; }
+figure>figlabel {
+	display: block;
+	font-style: italic;
+}
+
+footer { font-style: italic; text-align: center; }
+
+/* tables */
+th { text-align: left; }
+td, th { background: #eee; padding: .2rem .6rem; }
+
+/* code tags */
+:not(pre)>code { padding: 0 .5em; background: #eee; border: 1px solid #bbb; }
