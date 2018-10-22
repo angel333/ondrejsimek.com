@@ -1,31 +1,31 @@
 <!doctype html>
 <html lang='en'>
 <head>
-	<meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width'>
-	<link rel='stylesheet' href='/css/main.css' type='text/css'>
-	<meta name="viewport" content='width=device-width, initial-scale=1'>
-	<title>{{ title }}</title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width'>
+  <link rel='stylesheet' href='/css/main.css' type='text/css'>
+  <meta name="viewport" content='width=device-width, initial-scale=1'>
+  <title>{{ title }}</title>
 </head>
 <body>
 
 {% if not homepage %}
-	<nav><a href='/'>&larr; back to ondrejsimek.com</a></nav>
+  <nav><a href='/'>&larr; back to ondrejsimek.com</a></nav>
 {% endif %}
 
 {{ contents | safe }}
 
 <footer>
-	<hr>
-	Author: Ondrej Simek
-	&mdash;
-	{% if published %}
-		Published: {{ published }}
-	{% else %}
-		email me at <a href='mailto:me@ondrejsimek.com'>me@ondrejsimek.com</a>
-	{% endif %}
-	&mdash;
-	available under a <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0 license</a>
+  <hr>
+  Author: Ondrej Simek
+  &mdash;
+  {% if published %}
+    Published: {{ published }}
+  {% else %}
+    email me at <a href='mailto:me@ondrejsimek.com'>me@ondrejsimek.com</a>
+  {% endif %}
+  &mdash;
+  available under a <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0 license</a>
 </footer>
 
 </body>
