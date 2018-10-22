@@ -2,7 +2,8 @@
   "name": "ondrejsimek.com",
   "private": true,
   "scripts": {
-    "gen": "metalsmith"
+    "gen": "metalsmith",
+    "rsync": "rsync -r pub/ 0oo:ondrejsimek.com"
   },
   "dependencies": {
     "jstransformer-nunjucks": "^0.5.0",
