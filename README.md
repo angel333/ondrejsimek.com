@@ -21,7 +21,7 @@ modd
 
 ## License
 
-[CC BY 4.0]
+If not stated otherwise, [CC BY 4.0].
 
 [ondrejsimek.com]: https://ondrejsimek.com/
 [pandoc]: https://pandoc.org/
