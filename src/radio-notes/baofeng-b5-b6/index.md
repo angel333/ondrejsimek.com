@@ -7,14 +7,14 @@ published: 2018-10-22
 
 ## Keys on the main screen
 
-- `MENU` (short press): Enter menu
-- `MENU` (long press): Lock the keyboard
-- `UP`, `DOWN`, numbers: Select channel or frequency
-- <code>AB&#x23ce;</code>: Switch channel A or B
-- `FM` (short press): Switch to FM radio
-- `FM` (long press): Delete current channel
-- `W/SCAN` (short press): Switch freqency mode and channel mode
-- `W/SCAN` (long press): Save to channel
+- <kbd>MENU</kbd> (short press): Enter menu
+- <kbd>MENU</kbd> (long press): Lock the keyboard
+- <kbd>UP</kbd>, <kbd>DOWN</kbd>, numbers: Select channel or frequency
+- <kbd>AB&#x23ce;</kbd>: Switch channel A or B
+- <kbd>FM</kbd> (short press): Switch to FM radio
+- <kbd>FM</kbd> (long press): Delete current channel
+- <kbd>W/SCAN</kbd> (short press): Switch freqency mode and channel mode
+- <kbd>W/SCAN</kbd> (long press): Save to channel
 
 ## Main display
 
@@ -36,52 +36,53 @@ published: 2018-10-22
 - Channels (A and B):
 	- Channel name / frequency
 	- Active channel indicator (arrow ow on the left) - if the channel is not
-		active but is receiving signal, the arrow will blink.
+	  active but is receiving signal, the arrow will blink.
 	- Channel number (number on the left)
 
 ## Menu system
 
-Pressing the `MENU` key opens the pseudo menu item `00 MENU`. Then after
-pressing `UP` or `DOWN`, it's going to select the item that was opened when you
-closed the menu the last time.
+Pressing the <kbd>MENU</kbd> key opens the pseudo menu item <kbd>00 MENU</kbd>.
+Then after pressing <kbd>UP</kbd> or <kbd>DOWN</kbd>, it's going to select the
+item that was opened when you closed the menu the last time.
 
 | Item                        | Global / Channel | Function                                   | Description                                                  | Possible values                      |
 |-----------------------------|------------------|--------------------------------------------|--------------------------------------------------------------|--------------------------------------|
-| <code>00&nbsp;MENU</code>   | &nbsp;           | **Menu**                                   | _Dummy item displayed when you activate the menu_            | &nbsp;                               |
-| <code>01&nbsp;STEP</code>   | Channel          | **Frequency Step**                         | How far are jumps between frequencies                        | 5 / 6.25 / 10 / 12.5 / 20 / 25 (kHz) |
-| <code>02&nbsp;SQL</code>    | Global           | **Squelch Level**                          | Cuts low signal communication                                | 0..9                                 |
-| <code>03&nbsp;SAVE</code>   | Global           | **Save Battery**                           | Switches transceiver to low when signal is good (see manual) | ON / OFF                             |
-| <code>04&nbsp;TXPR</code>   | Channel          | **Transmit Power**                         | &nbsp;                                                       | HIGH / LOW                           |
-| <code>05&nbsp;ROGE</code>   | Global           | **Roger Beep**                             | Send a series of beeps after transmission                    | ON / OFF                             |
-| <code>06&nbsp;TOT</code>    | Global           | **Transmission Time Out Timer**            | Cut transmission after set time; prevents overheating        | 1M..7M (minutes) / OFF               |
-| <code>07&nbsp;VOX</code>    | Global           | **Voice Operated Xmtr**                    | Transmit automatically without the PTT button                | 1..9 / OFF                           |
-| <code>08&nbsp;BEEP</code>   | Global           | **Keypad beep**                            | Keys will beep                                               | ON / OFF                             |
-| <code>09&nbsp;VOICE</code>  | Global           | **Voice Prompt**                           | Will read everything out loud                                | CHINA / ENGLIS / OFF                 |
-| <code>10&nbsp;TDR</code>    | Global           | **Dual Watch / Dual Standby**              | Monitor both channel A and B                                 | ON / OFF                             |
-| <code>11&nbsp;R-CODE</code> | Channel          | **Reception CTCSS**                        | Filters communication by a special subtone                   | *many values*\*                      |
-| <code>12&nbsp;T-CODE</code> | Channel          | **Transmission CTCSS**                     | Sends a special subtone for filtering communication          | *many values*\*                      |
-| <code>13&nbsp;ABR</code>    | Global           | **Display Backlight**                      | &nbsp;                                                       | ON / OFF                             |
-| <code>14&nbsp;PTTID</code>  | Channel          | **Send Signal Code (PTT ID)**              | &nbsp;                                                       | ON / OFF                             |
-| <code>15&nbsp;ANI</code>    | Global           | **Automatic Number Identification**        | &nbsp;                                                       | 000000..FFFFFF\*\*                   |
-| <code>16&nbsp;PTIDM</code>  | Global           | **Mode of Transmitting Signal Code**       | Send PTTID on the beginning, end, or both                    | BOT / EOT / BOTH                     |
-| <code>17&nbsp;DT-ST</code>  | Global           | **DTMF Side Tone**                         | Play DTMF tones locally                                      | ON / OFF                             |
-| <code>18&nbsp;MDF 1</code>  | Global           | **Display Frequency A**                    | How to display channel A                                     | Channel / name / frequency           |
-| <code>19&nbsp;MDF 2</code>  | Global           | **Display Frequency B**                    | How to display channel B                                     | Channel / name / frequency           |
-| <code>20&nbsp;BCL</code>    | Channel          | **Busy Channel Lockout**                   | Prevents transmission if the frequency is busy               | ON / OFF                             |
-| <code>21&nbsp;SFTD</code>   | Channel          | **Frequency Shift Direction**              | &nbsp;                                                       | 0 (zero) / + / -                     |
-| <code>22&nbsp;OFFSET</code> | Channel          | **Offset Frequency**                       | &nbsp;                                                       | *numeric value*                      |
-| <code>23&nbsp;SCANM</code>  | Global           | **Scan Type**                              | See [Scan Mode](#scan-mode)                                  | TO / CO / SE                         |
-| <code>24&nbsp;REV</code>    | Channel          | **Reversed Duplex Mode**                   | &nbsp;                                                       | ON / OFF                             |
-| <code>25&nbsp;STE</code>    | Global           | **Squelch Tail Elimination**               | &nbsp;                                                       | ON / OFF                             |
-| <code>26&nbsp;NAME</code>   | Channel          | **Channel Name**                           | Not available in frequency mode                              | *custom text*                        |
-| <code>27&nbsp;W/N</code>    | Channel          | **Wideband / Narrowband**                  | &nbsp;                                                       | WIDE / NARROW                        |
-| <code>24&nbsp;TXAB</code>   | &nbsp;           | **Transmit selection while in dual watch** | Mentioned in the manual but not present on my radio &#x203D; | &nbsp;                               |
-| <code>29&nbsp;COMP</code>   | &nbsp;           | **Noise Reduction**                        | Mentioned in the manual but not present on my radio &#x203D; | &nbsp;                               |
+| <kbd>00&nbsp;MENU</kbd>   | &nbsp;           | **Menu**                                   | _Dummy item displayed when you activate the menu_            | &nbsp;                               |
+| <kbd>01&nbsp;STEP</kbd>   | Channel          | **Frequency Step**                         | How far are jumps between frequencies                        | 5 / 6.25 / 10 / 12.5 / 20 / 25 (kHz) |
+| <kbd>02&nbsp;SQL</kbd>    | Global           | **Squelch Level**                          | Cuts low signal communication                                | 0..9                                 |
+| <kbd>03&nbsp;SAVE</kbd>   | Global           | **Save Battery**                           | Switches transceiver to low when signal is good (see manual) | ON / OFF                             |
+| <kbd>04&nbsp;TXPR</kbd>   | Channel          | **Transmit Power**                         | &nbsp;                                                       | HIGH / LOW                           |
+| <kbd>05&nbsp;ROGE</kbd>   | Global           | **Roger Beep**                             | Send a series of beeps after transmission                    | ON / OFF                             |
+| <kbd>06&nbsp;TOT</kbd>    | Global           | **Transmission Time Out Timer**            | Cut transmission after set time; prevents overheating        | 1M..7M (minutes) / OFF               |
+| <kbd>07&nbsp;VOX</kbd>    | Global           | **Voice Operated Xmtr**                    | Transmit automatically without the PTT button                | 1..9 / OFF                           |
+| <kbd>08&nbsp;BEEP</kbd>   | Global           | **Keypad beep**                            | Keys will beep                                               | ON / OFF                             |
+| <kbd>09&nbsp;VOICE</kbd>  | Global           | **Voice Prompt**                           | Will read everything out loud                                | CHINA / ENGLIS / OFF                 |
+| <kbd>10&nbsp;TDR</kbd>    | Global           | **Dual Watch / Dual Standby**              | Monitor both channel A and B                                 | ON / OFF                             |
+| <kbd>11&nbsp;R-CODE</kbd> | Channel          | **Reception CTCSS**                        | Filters communication by a special subtone                   | *many values*\*                      |
+| <kbd>12&nbsp;T-CODE</kbd> | Channel          | **Transmission CTCSS**                     | Sends a special subtone for filtering communication          | *many values*\*                      |
+| <kbd>13&nbsp;ABR</kbd>    | Global           | **Display Backlight**                      | &nbsp;                                                       | ON / OFF                             |
+| <kbd>14&nbsp;PTTID</kbd>  | Channel          | **Send Signal Code (PTT ID)**              | &nbsp;                                                       | ON / OFF                             |
+| <kbd>15&nbsp;ANI</kbd>    | Global           | **Automatic Number Identification**        | &nbsp;                                                       | 000000..FFFFFF\*\*                   |
+| <kbd>16&nbsp;PTIDM</kbd>  | Global           | **Mode of Transmitting Signal Code**       | Send PTTID on the beginning, end, or both                    | BOT / EOT / BOTH                     |
+| <kbd>17&nbsp;DT-ST</kbd>  | Global           | **DTMF Side Tone**                         | Play DTMF tones locally                                      | ON / OFF                             |
+| <kbd>18&nbsp;MDF 1</kbd>  | Global           | **Display Frequency A**                    | How to display channel A                                     | Channel / name / frequency           |
+| <kbd>19&nbsp;MDF 2</kbd>  | Global           | **Display Frequency B**                    | How to display channel B                                     | Channel / name / frequency           |
+| <kbd>20&nbsp;BCL</kbd>    | Channel          | **Busy Channel Lockout**                   | Prevents transmission if the frequency is busy               | ON / OFF                             |
+| <kbd>21&nbsp;SFTD</kbd>   | Channel          | **Frequency Shift Direction**              | &nbsp;                                                       | 0 (zero) / + / -                     |
+| <kbd>22&nbsp;OFFSET</kbd> | Channel          | **Offset Frequency**                       | &nbsp;                                                       | *numeric value*                      |
+| <kbd>23&nbsp;SCANM</kbd>  | Global           | **Scan Type**                              | See [Scan Mode](#scan-mode)                                  | TO / CO / SE                         |
+| <kbd>24&nbsp;REV</kbd>    | Channel          | **Reversed Duplex Mode**                   | &nbsp;                                                       | ON / OFF                             |
+| <kbd>25&nbsp;STE</kbd>    | Global           | **Squelch Tail Elimination**               | &nbsp;                                                       | ON / OFF                             |
+| <kbd>26&nbsp;NAME</kbd>   | Channel          | **Channel Name**                           | Not available in frequency mode                              | *custom text*                        |
+| <kbd>27&nbsp;W/N</kbd>    | Channel          | **Wideband / Narrowband**                  | &nbsp;                                                       | WIDE / NARROW                        |
+| <kbd>24&nbsp;TXAB</kbd>   | &nbsp;           | **Transmit selection while in dual watch** | Mentioned in the manual but not present on my radio &#x203D; | &nbsp;                               |
+| <kbd>29&nbsp;COMP</kbd>   | &nbsp;           | **Noise Reduction**                        | Mentioned in the manual but not present on my radio &#x203D; | &nbsp;                               |
 
 [CTCSS]: #ctcss
 
-\* Use `MENU`, `UP` and `DOWN` to select the value.  
-\*\* Use `7` and `9` for navigation through digits, `UP` and `DOWN` (or selection knob) to choose characters.
+\* Use <kbd>MENU</kbd>, <kbd>UP</kbd> and <kbd>DOWN</kbd> to select the value.  
+\*\* Use <kbd>7</kbd> and <kbd>9</kbd> for navigation through digits,
+<kbd>UP</kbd> and <kbd>DOWN</kbd> (or selection knob) to choose characters.
 
 ### Global / Channel
 
@@ -92,15 +93,16 @@ going to be different.
 
 ### Navigating the menu
 - *numbers*: quickly go to menu item
-- <code>AB&#x23ce;</code>: Change value
-- `MENU`: Confirm and get back to menu (except for `11 R-CODE` and `12 T-CODE`
-  where it is also used for selection)
+- <kbd>AB&#x23ce;</kbd>: Change value
+- <kbd>MENU</kbd>: Confirm and get back to menu (except for <kbd>11
+  R-CODE</kbd> and <kbd>12 T-CODE</kbd> where it is also used for selection)
  
 ## Storing and deleting channels
 
-To save a frequency to a channel, long-press `VM/SCAN`, then choose the desired
+To save a frequency to a channel, long-press <kbd>VM/SCAN</kbd>, then choose the desired
 channel number. If the channel number blinks, it's vacant. Finally confirm with
-`VM/SCAN`, `MENU` or <code>AB&#x23ce;</code>. Delete channels by long-pressing `FM`.
+<kbd>VM/SCAN</kbd>, <kbd>MENU</kbd> or <kbd>AB&#x23ce;</kbd>. Delete channels
+by long-pressing <kbd>FM</kbd>.
 
 There are 99 positions available and 16 positions in the FM Radio mode.
 
@@ -115,16 +117,18 @@ nothing.
 
 ## Scan mode
 
-After pressing `MENU` and then `VM/SCAN`, the radio will start scanning either
-frequencies or channels (depending on current mode). Once it finds a signal, it
-does one of the following, depending on scanning mode (menu option `23 SCANM`):
+After pressing <kbd>MENU</kbd> and then <kbd>VM/SCAN</kbd>, the radio will
+start scanning either frequencies or channels (depending on current mode). Once
+it finds a signal, it does one of the following, depending on scanning mode
+(menu option <kbd>23 SCANM</kbd>):
 
 - TO (Time Operation): stops briefly (about 5 seconds);
 - CO (Carrier Operation): stops until the signal disappears;
 - SE (Search Operation): stops forever.
 
-Stop the scanning with `MENU` or `VM/SCAN`. You can also switch the scanning
-direction with `UP` and `DOWN` keys or with the knob.
+Stop the scanning with <kbd>MENU</kbd> or <kbd>VM/SCAN</kbd>. You can also
+switch the scanning direction with <kbd>UP</kbd> and <kbd>DOWN</kbd> keys or
+with the knob.
 
 ## FM radio
 
@@ -140,8 +144,8 @@ interrupted.
 
 ## Factory reset
 
-Turn the radio off, press and hold `MENU` (not `FM` as the manual suggests),
-then turn the radio on. A menu will apear:
+Turn the radio off, press and hold <kbd>MENU</kbd> (not <kbd>FM</kbd> as the
+manual suggests), then turn the radio on. A menu will apear:
 
 - VFO: Reset channels etc.
 - ALL: Factory reset (note: language will be switched to chinese as well)

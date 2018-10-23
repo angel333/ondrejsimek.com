@@ -14,23 +14,22 @@ pre { background: #eee; padding: .6rem;}
 /* link at the top (home) */
 nav>a { text-decoration: none; }
 
-/* figures */
-figure {
-	margin-left: 0;
-	margin-right: 0;
-	text-align: center;
-}
+figure { margin-left: 0; margin-right: 0; text-align: center; }
 figure img { max-width: 100%; }
-figure>figlabel {
-	display: block;
-	font-style: italic;
-}
+figure>figlabel { display: block; font-style: italic; }
 
 footer { font-style: italic; text-align: center; }
 
-/* tables */
-th { text-align: left; }
-td, th { background: #eee; padding: .2rem .6rem; }
+th, td { padding: .2rem .6rem; }
+th { text-align: left; background: #ccc; }
+td { background: #eee; }
 
-/* code tags */
-:not(pre)>code { padding: 0 .5em; background: #eee; border: 1px solid #bbb; }
+kbd {
+	font-weight: bold;
+	font-size: .9em;
+	border: 1px solid #bbb;
+	border-bottom-width: 2px;
+	border-radius: 3px;
+	padding: .1em .6em;
+	background: #eee;
+}
