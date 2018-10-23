@@ -17,16 +17,22 @@
 {{ contents | safe }}
 
 <footer>
-  <hr>
-  Author: Ondrej Simek
-  &mdash;
-  {% if published %}
-    Published: {{ published }}
-  {% else %}
-    email me at <a href='mailto:me@ondrejsimek.com'>me@ondrejsimek.com</a>
-  {% endif %}
-  &mdash;
-  available under a <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0 license</a>
+  <div>
+    //
+    {% if not homepage %}
+      Ondrej Simek
+    {% endif %}
+    <a href='mailto:me@ondrejsimek.com'>&lt;me@ondrejsimek.com&gt;</a>
+    {% if published %}
+      @ {{ published }}
+    {% endif %}
+  </div>
+  <div class='license'>
+    <a href='https://creativecommons.org/licenses/by/4.0/'>
+      <img src='/img/cc/cc.svg'>
+      <img src='/img/cc/by.svg'>
+    </a>
+  </div>
 </footer>
 
 </body>
