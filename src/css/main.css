@@ -67,3 +67,4 @@ section {
 	-moz-column-break-inside: avoid;
 }
 
+code { font-family: VGA8; }
