@@ -19,6 +19,10 @@ Install [devd] and [modd], then run:
 modd
 ```
 
+## Server settings
+
+- `[X-Frame-Options]: sameorigin` is required.
+
 ## Credits
 
 - [metalsmith]
@@ -37,3 +41,4 @@ If not stated otherwise, [CC BY 4.0].
 [The Ultimate Oldschool PC Font Pack]: https://int10h.org/oldschool-pc-fonts/
 [STIX Fonts]: https://www.stixfonts.org/
 [CC BY 4.0]: https://creativecommons.org/licenses/by/4.0/
+[X-Frame-Options]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
