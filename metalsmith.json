@@ -1,7 +1,4 @@
 {
-  "source": "./src",
-  "destination": "./pub",
-  "clean": true,
   "plugins": {
     "metalsmith-markdown": {},
     "metalsmith-date-formatter": {
