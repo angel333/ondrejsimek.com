@@ -25,6 +25,7 @@
     "metalsmith-layouts": {
       "default": "default.njk",
       "pattern": "**/*.html"
-    }
+    },
+    "metalsmith-html-minifier": {}
   }
 }
