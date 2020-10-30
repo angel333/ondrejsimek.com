@@ -21,7 +21,7 @@ modd
 
 ## Server settings
 
-- `[X-Frame-Options]: sameorigin` is required.
+- `[X-Frame-Options]: sameorigin` is required for SVG to work properly.
 
 ## Credits
 
