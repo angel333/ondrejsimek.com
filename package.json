@@ -12,7 +12,6 @@
     "metalsmith-date-formatter": "^1.0.2",
     "metalsmith-in-place": "^4.2.0",
     "metalsmith-layouts": "^2.2.0",
-    "metalsmith-markdown": "^1.0.1",
-    "metalsmith-pandoc": "^1.0.0"
+    "metalsmith-markdown": "^1.0.1"
   }
 }

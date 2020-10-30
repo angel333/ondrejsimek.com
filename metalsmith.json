@@ -4,10 +4,6 @@
   "clean": true,
   "plugins": {
     "metalsmith-markdown": {},
-    "metalsmith-pandoc": {
-      "from": "rst",
-      "pattern": "**/*.rst"
-    },
     "metalsmith-date-formatter": {
       "dates": [
         {
