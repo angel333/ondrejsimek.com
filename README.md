@@ -6,7 +6,7 @@ Make sure [pandoc] is installed, then run:
 
 ```
 npm install
-npm run gen
+npx metalsmith
 ```
 
 Generated site will be in `./pub`.
