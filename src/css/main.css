@@ -68,3 +68,8 @@ section {
 }
 
 code { font-family: VGA8; }
+
+.ukraine-flag { margin: 0rem 0;  padding-top: 1rem; }
+.ukraine-flag>div { line-height: 2rem; min-height: 2rem; text-align: center; }
+.ukraine-flag>div:nth-child(1) { background-color: #0057b7; color: white; }
+.ukraine-flag>div:nth-child(2) { background-color: #ffd700; }
