@@ -6,7 +6,7 @@ body {
 }
 
 h1,h2,h3,h4,h5 { font-family: Oswald; }
-h1 { text-align: center; font-size: 3.6rem; }
+h1 { text-align: center; font-size: 3.6rem; margin: 4rem 0; }
 p,li { text-align: justify; line-height: 1.6rem; }
 hr { border: 0; border-bottom: 1px solid #ccc; }
 pre { max-width: 100%; overflow: auto; }
@@ -16,17 +16,11 @@ figure { margin-left: 0; margin-right: 0; text-align: center; }
 figure img { max-width: 100%; }
 figure>figlabel { display: block; font-style: italic; }
 
-/* links */
-a { transition: 1s; }
-a:hover { transition: .1s; }
+a:hover { text-decoration: none; }
 
 /* link at the top (home) and footer */
-nav a, footer a { text-decoration: none; transition: 2s; }
-nav a:hover, footer a:hover { transition: .1s; }
-nav {
-	font-family: Oswald;
-	font-style: italic;
-}
+nav a, footer a { text-decoration: none; }
+nav { font-family: Oswald; font-style: italic; }
 
 footer {
 	padding-top: 1rem;
@@ -52,21 +46,17 @@ kbd {
 
 /* multicolumn (e.g. on homepage) */
 .multicolumn {
-	column-count: 2;
+	column-count: 3;
 	column-width: 18rem;
 }
-section {
-	column-break-inside: avoid;
-	-webkit-column-break-inside: avoid;
-	-moz-column-break-inside: avoid;
-}
+section { break-inside: avoid; }
 
 code { font-family: VGA8; }
 
 @media (prefers-color-scheme: dark) {
 	body { background: #111; color: white; }
 
-	kbd { background: #111; border: 1px solid #444; }
+	kbd { background: #222; border: 1px solid #444; }
 
 	nav a, footer a { color: #fff; }
 	nav a:hover, footer a:hover { color: #aaa; }
@@ -75,8 +65,7 @@ code { font-family: VGA8; }
 	tr:nth-child(even)>td { background: #333; }
 	tr:nth-child(odd)>td  { background: #222; }
 
-	a { color: #bbf; }
-	a:hover { color: #fff }
+	a { color: #99f; }
 
 	pre { background: #222; }
 
@@ -95,8 +84,7 @@ code { font-family: VGA8; }
 	tr:nth-child(even)>td { background: #f0f0f0; }
 	tr:nth-child(odd)>td  { background: #f6f6f6; }
 
-	a { color: initial; }
-	a:hover { color: #000 }
+	a { color: #000; }
 
 	pre { background: #eee; }
 
@@ -105,5 +93,5 @@ code { font-family: VGA8; }
 
 .ukraine-flag { margin: 0rem 0;  padding-top: 1rem; }
 .ukraine-flag>div { line-height: 2rem; min-height: 2rem; text-align: center; }
-.ukraine-flag>div:nth-child(1) { background-color: #0057b7; color: white; }
-.ukraine-flag>div:nth-child(2) { background-color: #ffd700; }
+.ukraine-flag>div:nth-child(1) { background-color: #0057b7; color: #ffd700; }
+.ukraine-flag>div:nth-child(2) { background-color: #ffd700; color: #0057b7; }
