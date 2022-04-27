@@ -10,7 +10,7 @@ h1 { text-align: center; font-size: 3.6rem; }
 p,li { text-align: justify; line-height: 1.6rem; }
 hr { border: 0; border-bottom: 1px solid #ccc; }
 pre { max-width: 100%; overflow: auto; }
-pre { background: #eee; padding: .6rem;}
+pre { padding: .6rem;}
 
 figure { margin-left: 0; margin-right: 0; text-align: center; }
 figure img { max-width: 100%; }
@@ -18,11 +18,11 @@ figure>figlabel { display: block; font-style: italic; }
 
 /* links */
 a { transition: 1s; }
-a:hover { color: #000; transition: .1s; }
+a:hover { transition: .1s; }
 
 /* link at the top (home) and footer */
-nav a, footer a { text-decoration: none; color: #000; transition: 2s; }
-nav a:hover, footer a:hover { color: #999; transition: .1s; }
+nav a, footer a { text-decoration: none; transition: 2s; }
+nav a:hover, footer a:hover { transition: .1s; }
 nav {
 	font-family: Oswald;
 	font-style: italic;
@@ -39,22 +39,16 @@ footer {
 footer>div.license img { height: 2rem; vertical-align: middle; }
 
 th, td { padding: .2rem .6rem; }
-th { text-align: left; background: #e0e0e0; }
-tr:nth-child(even)>td { background: #f0f0f0; }
-tr:nth-child(odd)>td  { background: #f6f6f6; }
+th { text-align: left; }
 
 kbd {
 	font-family: sans-serif;
 	font-size: .75em;
 	font-weight: bold;
-	border: 1px solid #bbb;
 	border-bottom-width: 2px;
 	border-radius: 3px;
 	padding: .1em .6em;
-	background: #eee;
 }
-
-hr { border-color: #ddd; }
 
 /* multicolumn (e.g. on homepage) */
 .multicolumn {
@@ -68,6 +62,46 @@ section {
 }
 
 code { font-family: VGA8; }
+
+@media (prefers-color-scheme: dark) {
+	body { background: #111; color: white; }
+
+	kbd { background: #111; border: 1px solid #444; }
+
+	nav a, footer a { color: #fff; }
+	nav a:hover, footer a:hover { color: #aaa; }
+
+	th { background: #555; }
+	tr:nth-child(even)>td { background: #333; }
+	tr:nth-child(odd)>td  { background: #222; }
+
+	a { color: #bbf; }
+	a:hover { color: #fff }
+
+	pre { background: #222; }
+
+	hr { border-color: #fff; }
+}
+
+@media (prefers-color-scheme: light) {
+	body { background: white; }
+
+	kbd { background: #eee; border: 1px solid #bbb; }
+
+	nav a, footer a { color: #000; }
+	nav a:hover, footer a:hover { color: #999; }
+
+	th { background: #e0e0e0; }
+	tr:nth-child(even)>td { background: #f0f0f0; }
+	tr:nth-child(odd)>td  { background: #f6f6f6; }
+
+	a { color: initial; }
+	a:hover { color: #000 }
+
+	pre { background: #eee; }
+
+	hr { border-color: #ddd; }
+}
 
 .ukraine-flag { margin: 0rem 0;  padding-top: 1rem; }
 .ukraine-flag>div { line-height: 2rem; min-height: 2rem; text-align: center; }
