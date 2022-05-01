@@ -1,24 +1,21 @@
 body { max-width: 60rem; margin: 1rem; }
 
-p,li { text-align: justify; line-height: 1.6rem; }
-pre { max-width: 100%; overflow: auto; padding: 1rem; background: #eee; }
+p { text-align: justify; line-height: 1.3; }
+li { text-align: justify; margin: .5rem 0; }
+pre { max-width: 100%; overflow: auto; padding: .5rem; border: 1px solid #000; }
 
-figure>figlabel { display: block; font-style: italic; }
-
+figure>figlabel { font-family: monospace; display: block; text-align: center; }
 
 nav, footer { font-family: monospace; font-weight: bold; }
-footer {
-	padding: .5rem 0;
-	line-height: 2;
-	border-top: 1px solid #000;
-	margin-top: 1rem;
-}
-nav a, footer a { text-decoration: none; }
-footer>div.license img { height: 1.5rem; vertical-align: middle; }
+footer { border-top: 1px solid #000; margin-top: 1rem; }
+footer>div { margin: .5rem 0; }
 
-th, td { padding: .2rem .6rem; }
-th { background: #ddd; text-align: left; }
-td { background: #eee; }
+table { border-collapse: collapse; }
+th, td { padding: .2rem .6rem; border: 1px solid #000; }
+th { text-align: left; }
+
+.home { column-count: 3; column-width: 18rem; }
+.home>section { break-inside: avoid; }
 
 kbd {
 	font-weight: bold;
@@ -29,28 +26,30 @@ kbd {
 	border-bottom-width: 2px;
 }
 
-.home {
-	column-count: 3;
-	column-width: 18rem;
-}
-section { break-inside: avoid; }
-
 @media (prefers-color-scheme: dark) {
-	.light-only { display: none; }
+	.mode::after { content: 'dark mode'; }
 	body { background: #000; color: #eee; }
 	kbd { background: #222; border-color: #444; }
-	nav, footer { border-color: #eee; }
-	a { color: #99f; }
-	th { background: #333; }
-	td { background: #222; }
-	pre { background: #222; }
+	footer { border-color: #eee; }
+	a:link { color: #0ff; }
+	a:visited { color: #ff0; }
+	a:active { color: #f00; }
+	th, td, pre { border-color: #aaa; }
 }
 
 @media (prefers-color-scheme: light) {
-	.dark-only { display: none; }
+	.mode::after { content: 'light mode'; }
 }
 
-.ukraine-flag { margin-top: .5rem; font-family: monospace; font-weight: bold; }
-.ukraine-flag>div { line-height: 2rem; min-height: 2rem; text-align: center; }
-.ukraine-flag>div:nth-child(1) { background-color: #0057b7; color: #ffd700; }
-.ukraine-flag>div:nth-child(2) { background-color: #ffd700; color: #0057b7; }
+@media print {
+	.mode::after { content: 'print mode'; }
+	body { margin: 0; }
+	nav { display: none; }
+}
+
+.ukraine-flag { font-weight: bold; }
+@media not print {
+	.ukraine-flag>div { line-height: 2rem; min-height: 2rem; padding: 0 .5rem; }
+	.ukraine-flag>div:nth-child(1) { background-color: #0057b7; color: #ffd700; }
+	.ukraine-flag>div:nth-child(2) { background-color: #ffd700; color: #0057b7; }
+}

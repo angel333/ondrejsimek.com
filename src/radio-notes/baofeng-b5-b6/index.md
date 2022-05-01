@@ -23,7 +23,7 @@ published: 2018-10-22
 	- DW: Dual Watch / Dual Standby
 	- R: Reversed Duplex Mode
 	- VOX: Voice Operated Xmtr
-	- Alarm icon: TODO
+	- Alarm icon: <mark>TODO</mark>
 	- CT: Transmitting CTCSS
 	- DCS: Transmitting DCS
 	- Battery indicator

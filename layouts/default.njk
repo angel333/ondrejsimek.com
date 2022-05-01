@@ -16,7 +16,6 @@
 
 <footer>
   <div>
-    //
     {% if not homepage %}
       Ondra Simek
     {% endif %}
@@ -25,12 +24,10 @@
       <span style='white-space:nowrap'>@ {{ published }}</span>
     {% endif %}
   </div>
-  <div class='license'>
-    <a href='https://creativecommons.org/licenses/by/4.0/'>
-      <img src='/img/cc/cc.svg'>
-      <img src='/img/cc/by.svg'>
-    </a>
-    | mode: <span class='dark-only'>dark</span><span class='light-only'>light</span>
+  <div>
+    <a href='https://creativecommons.org/licenses/by/4.0/'>CC BY 4.0</a>
+    <a class='mode' href='javascript:alert("Change your OS/browser settings to change color mode.")'></a>
+    <a href='/'>back to /</a>
   </div>
   <div class='ukraine-flag'>
     <div>Glory to Ukraine!</div>
