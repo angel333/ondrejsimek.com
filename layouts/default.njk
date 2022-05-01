@@ -3,9 +3,6 @@
 <head>
   <meta charset='utf-8'>
   <link rel='stylesheet' href='/css/main.css' type='text/css'>
-  <link rel='stylesheet' href='/css/stix/stix.css'>
-  <link rel='stylesheet' href='/css/vga/vga.css'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <title>{{ title }}</title>
 </head>
@@ -18,10 +15,6 @@
 {{ contents | safe }}
 
 <footer>
-  <div class='ukraine-flag'>
-    <div>Glory to Ukraine!</div>
-    <div>Путiн хуйло</div>
-  </div>
   <div>
     //
     {% if not homepage %}
@@ -37,6 +30,11 @@
       <img src='/img/cc/cc.svg'>
       <img src='/img/cc/by.svg'>
     </a>
+    | mode: <span class='dark-only'>dark</span><span class='light-only'>light</span>
+  </div>
+  <div class='ukraine-flag'>
+    <div>Glory to Ukraine!</div>
+    <div>Путiн хуйло</div>
   </div>
 </footer>
 
