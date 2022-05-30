@@ -1,21 +1,18 @@
-body { max-width: 60rem; margin: 1rem; }
+body { max-width: 90ch; margin: 2rem; }
 
-p { text-align: justify; line-height: 1.3; }
-li { text-align: justify; margin: .5rem 0; }
+p, li { text-align: justify; line-height: 1.4;  }
 pre { max-width: 100%; overflow: auto; padding: .5rem; border: 1px solid #000; }
 
-figure>figlabel { font-family: monospace; display: block; text-align: center; }
+figure { margin: 1rem 0; }
+figure>figlabel { font-family: monospace; display: block; }
 
-nav, footer { font-family: monospace; font-weight: bold; }
-footer { border-top: 1px solid #000; margin-top: 1rem; }
-footer>div { margin: .5rem 0; }
+nav, footer { font-family: monospace; margin: 2rem 0; }
+footer { border-top: 1px solid #000; }
+footer>div { margin: 1rem 0; }
 
 table { border-collapse: collapse; }
 th, td { padding: .2rem .6rem; border: 1px solid #000; }
 th { text-align: left; }
-
-.home { column-count: 3; column-width: 18rem; }
-.home>section { break-inside: avoid; }
 
 kbd {
 	font-weight: bold;
