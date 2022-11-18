@@ -2,43 +2,27 @@
 
 ## Installation
 
-Make sure [pandoc] is installed, then run:
+    npm install
+    npm run build
 
-```
-npm install
-npx metalsmith
-```
-
-Generated site will be in `./pub`.
+Generated site will be in `./build`.
 
 ## Live reload
 
 Install [devd] and [modd], then run:
 
-```
-modd
-```
+    modd
 
 ## Server settings
 
 - `[X-Frame-Options]: sameorigin` is required for SVG to work properly.
-
-## Credits
-
-- [metalsmith]
-- [The Ultimate Oldschool PC Font Pack] \(VGA Font)
-- [STIX Fonts]
 
 ## License
 
 If not stated otherwise, [CC BY 4.0].
 
 [ondrejsimek.com]: https://ondrejsimek.com/
-[pandoc]: https://pandoc.org/
 [devd]: https://github.com/cortesi/devd
 [modd]: https://github.com/cortesi/modd
-[metalsmith]: https://github.com/segmentio/metalsmith
-[The Ultimate Oldschool PC Font Pack]: https://int10h.org/oldschool-pc-fonts/
-[STIX Fonts]: https://www.stixfonts.org/
 [CC BY 4.0]: https://creativecommons.org/licenses/by/4.0/
 [X-Frame-Options]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
