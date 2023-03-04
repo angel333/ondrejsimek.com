@@ -6,8 +6,7 @@ pre { max-width: 100%; overflow: auto; padding: .5rem; border: 1px solid #000; }
 figure { margin: 1rem 0; }
 figure>figlabel { font-family: monospace; display: block; }
 
-nav, footer { font-family: monospace; margin: 2rem 0; }
-footer { border-top: 1px solid #000; }
+footer { font-family: monospace; margin: 2rem 0; border-top: 1px solid #000; }
 footer>div { margin: 1rem 0; }
 
 table { border-collapse: collapse; }
@@ -41,7 +40,6 @@ kbd {
 @media print {
 	.mode::after { content: 'print mode'; }
 	body { margin: 0; }
-	nav { display: none; }
 }
 
 .ukraine-flag { font-weight: bold; }
